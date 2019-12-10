@@ -1,9 +1,53 @@
 body {
-  background-color: #C1ABA6;
+  background-color: #3366ff;
+  color: white;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px solid white;
+  font-size: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  line-height: 1.5em
 }
 
 .film_list {
-  
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.underline-on-hover:hover {
+    text-decoration: underline;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+
+h4 a{
+  font-size: 1em;
+}
+
+
+#film_ul li {
+  list-style-type: none;
+  margin-bottom: 1px solid white;
 }

@@ -10,7 +10,7 @@ get '/film_all' do
   erb(:index)
 end
 
-get '/film_detail/:id' do
+get '/film/:id' do
   @film = Film.find(params[:id].to_i)
   erb(:detail)
 end

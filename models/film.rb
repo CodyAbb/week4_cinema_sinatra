@@ -113,10 +113,8 @@ class Film
   def self.find(id)
     sql = "SELECT * FROM films WHERE id = $1"
     values = [id]
-    results = SqlRunner.run(sql, values)
-    film_hash = results.first
-    film = Film.new(film_hash)
-    return film
+    films = SqlRunner.run(sql, values)
+    return Film.new(films.first)
   end
 
 
